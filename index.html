@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking eggs timer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600;700&family=Mochiy+Pop+P+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="wrapper">
+        <header class="header">
+          <h1>Timer for Cooking Eggs</h1>
+          <h3>How do you prefer eggs today?</h3>
+          <p class="header_eggs">
+            Choose between boiled, soft-boiled, medium-boiled and hard-boiled
+            egg.
+          </p>
+        </header>
+        <div class="eggs">
+          <div class="eggs_cooked">
+            <div class="eggs_cooked__btn" id="eggs_boiled">
+              <p class="eggs_boiled__text">boiled</p>
+            </div>
+            <p class="egss_cooked__time">3min</p>
+          </div>
+          <div class="eggs_cooked">
+            <div class="eggs_cooked__btn" id="eggs_soft">
+              <p class="eggs_soft__text">soft-boiled</p>
+            </div>
+            <p class="egss_cooked__time">6min</p>
+          </div>
+          <div class="eggs_cooked">
+            <div class="eggs_cooked__btn" id="eggs_medium">
+              <p class="eggs_medium__text">medium-boiled</p>
+            </div>
+            <p class="egss_cooked__time">8min</p>
+          </div>
+          <div class="eggs_cooked">
+            <div class="eggs_cooked__btn" id="eggs_hard">
+              <p class="eggs_hard__text">hard-boiled</p>
+            </div>
+            <p class="egss_cooked__time">11min</p>
+          </div>
+        </div>
+        <div class="timer" id="countdown">
+          <p>00 : 00</p>
+        </div>
+        <div class="btn_cook">
+          <div class="btn_cook__start" id="start">
+            <p>start</p>
+          </div>
+          <div class="btn_cook__stop" id="stop">
+            <p>stop</p>
+          </div>
+        </div>
+        <audio
+          id="player"
+          src="/assets/mixkit-tick-tock-clock-timer-1045.wav"
+          type="audio/mp3"
+          loop
+        ></audio>
+        <div class="btn_reset" id="reset">
+          <p>reset</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
