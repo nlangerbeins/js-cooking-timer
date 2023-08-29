@@ -1,296 +1,291 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #eecc44;
+  background-color: #eecc44;
 }
 
 .background {
-    position: relative;
-    min-height: 100vh;
-    background-color: #000;
+  position: relative;
+  min-height: 100vh;
+  background-color: #000;
 }
 
 .background::before {
-    content: "";
-    background-image: url(/assets/img/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.9;
+  content: '';
+  background-image: url(/assets/img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.9;
 }
 
 .wrapper {
-    position: relative;
-    margin: 0 auto;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px 20px 60px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px 60px;
+  text-align: center;
 }
 
 h1 {
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 60px;
-    margin: 0 0 60px;
-    color: #fff;
-    text-shadow: 2px 2px 10px #000; 
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 60px;
+  margin: 0 0 60px;
+  color: #fff;
+  text-shadow: 2px 2px 10px #000;
 }
 
 h3 {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 700;
-    font-size: 30px;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .header_eggs {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 300;
-    font-size: 18px;
-    margin: 10px 0 0;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  font-size: 18px;
+  margin: 10px 0 0;
 }
-
 
 /*----------------------------Buttons eggs-------------------------------*/
 .eggs {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
 }
 
 .eggs_cooked {
-    display: grid;
-    grid-template-rows: 2fr 1fr; 
-    margin: 0 20px;
-    text-align: center;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  margin: 0 20px;
+  text-align: center;
 }
 
 .eggs_cooked__btn {
-    padding: 15px 5px;
-    margin: 0 0 15px;
-    text-align: center;
-    border: 1px solid rgb(100, 73, 73);
-    border-radius: 50px;
-    box-shadow: 1px 1px 15px 6px rgba(255,255,255,0.69);
-    cursor: pointer;
-    border: 1px solid #fff;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 500;
-    font-size: 16px;
+  padding: 15px 5px;
+  margin: 0 0 15px;
+  text-align: center;
+  border: 1px solid rgb(100, 73, 73);
+  border-radius: 50px;
+  box-shadow: 1px 1px 15px 6px rgba(255, 255, 255, 0.69);
+  cursor: pointer;
+  border: 1px solid #fff;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 16px;
 }
 
-
 .eggs_cooked__btn:hover {
-    transform: scale(1.1, 1.1);
-    box-shadow: 3px 3px 15px 6px rgba(255, 255, 255, 0.69);
-    transition: all 1s ease;
+  transform: scale(1.1, 1.1);
+  box-shadow: 3px 3px 15px 6px rgba(255, 255, 255, 0.69);
+  transition: all 1s ease;
 }
 
 #eggs_boiled {
-    background-color: #fff9ae;
+  background-color: #fff9ae;
 }
 
 #eggs_soft {
-    background-color: #f8ed62;
+  background-color: #f8ed62;
 }
 
 #eggs_medium {
-    background-color: #e9d700;
+  background-color: #e9d700;
 }
 
 #eggs_hard {
-    background-color: #dab600;
+  background-color: #dab600;
 }
 
 .egss_cooked__time {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 500;
-    font-size: 14px;
-    color: #000;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
 }
-
-
 
 /*--------------------------------Timer------------------------------------*/
 .timer {
-    display: flex;
-    justify-content: center;
-    margin: 100px 0 30px;
-    text-align: center;
-    font-size: 100px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    color: #fff;
-    text-shadow: 1px 1px 5px #000; 
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 30px;
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
 }
 
 .btn_cook {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 30px;
-    color: #fff;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Comfortaa', cursive;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
 }
 
 .btn_cook__start {
-    width: 120px;
-    padding: 10px 30px;
-    margin: 0 30px 0 0;
-    background-color: #0b910b;
-    border: 1px solid #097c09;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 120px;
+  padding: 10px 30px;
+  margin: 0 30px 0 0;
+  background-color: #0b910b;
+  border: 1px solid #097c09;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .btn_cook__start:hover {
-    background-color: #097c09;
+  background-color: #097c09;
 }
 
 .btn_cook__stop {
-    width: 120px;
-    padding: 10px 30px;
-    background-color: #aa3737;
-    border: 1px solid #8d2d2d;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 120px;
+  padding: 10px 30px;
+  background-color: #aa3737;
+  border: 1px solid #8d2d2d;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .btn_cook__stop:hover {
-    background-color: #8d2d2d;
+  background-color: #8d2d2d;
 }
 
 .btn_reset {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0 0;
-    font-size: 18px;
-    font-family: 'Comfortaa', cursive;
-    border: 1px solid #000;
-    padding: 10px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 18px;
+  font-family: 'Comfortaa', cursive;
+  border: 1px solid #000;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .btn_reset:hover {
-    background-color: rgba(226, 226, 226, 0.5);
+  background-color: rgba(226, 226, 226, 0.5);
 }
 
 .disabled {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .chosen {
-    box-shadow: 1px 1px 15px 6px rgba(100, 192, 97, 0.69);
+  box-shadow: 1px 1px 15px 6px rgba(100, 192, 97, 0.69);
 }
-
 
 /*-----------------------------------Mobile Version--------------------------*/
 @media all and (max-width: 900px) {
-    h1 {
-        font-size: 50px;
-    }
+  h1 {
+    font-size: 50px;
+  }
 }
 
 @media all and (max-width: 700px) {
-    h1 {
-        font-size: 44px;
-    }
+  h1 {
+    font-size: 44px;
+  }
 
-    h3 {
-        font-size: 24px;
-    }
+  h3 {
+    font-size: 24px;
+  }
 
-    .header_eggs {
-        font-size: 16px;
-        margin: 10px 10px 0;
-    }
+  .header_eggs {
+    font-size: 16px;
+    margin: 10px 10px 0;
+  }
 
-    .eggs_cooked {
-        margin: 0 10px;
-    }
+  .eggs_cooked {
+    margin: 0 10px;
+  }
 
-    .btn_reset {
-        margin: 0 0 20px;
-    }
+  .btn_reset {
+    margin: 0 0 20px;
+  }
 }
 
 @media all and (max-width: 600px) {
-    .header {
-        margin: 10px 10px 40px;
-    }
+  .header {
+    margin: 10px 10px 40px;
+  }
 
-    h1 {
-        font-size: 38px;
-        margin: 0 0 40px;
-    }
+  h1 {
+    font-size: 38px;
+    margin: 0 0 40px;
+  }
 
-    h3 {
-        font-size: 22px;
-    }
+  h3 {
+    font-size: 22px;
+  }
 
-    .eggs {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
-    
-    .eggs_cooked {
-        margin: 0 20px 0px;
-    }
+  .eggs {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-    .eggs_cooked__btn {
-        margin: 0 0 10px;
-    }
+  .eggs_cooked {
+    margin: 0 20px 0px;
+  }
 
-    .egss_cooked__time {
-        font-size: 12px;
-    }
+  .eggs_cooked__btn {
+    margin: 0 0 10px;
+  }
 
-    .timer {
-        margin: 50px 0 30px;
-        font-size: 80px;
-    }
+  .egss_cooked__time {
+    font-size: 12px;
+  }
+
+  .timer {
+    margin: 50px 0 30px;
+    font-size: 80px;
+  }
 }
 
 @media all and (max-width: 400px) {
-    h1 {
-        font-size: 30px;
-        margin: 0 0 40px;
-    }
+  h1 {
+    font-size: 30px;
+    margin: 0 0 40px;
+  }
 
-    h3 {
-        font-size: 18px;
-    }
+  h3 {
+    font-size: 18px;
+  }
 
-    .header_eggs {
-        font-size: 14px;
-        margin: 10px 0px 0;
-    }
+  .header_eggs {
+    font-size: 14px;
+    margin: 10px 0px 0;
+  }
 
-    .eggs_cooked {
-        margin: 0 10px 10px;
-    }
+  .eggs_cooked {
+    margin: 0 10px 10px;
+  }
 
-    .timer {
-        font-size: 70px;
-    }
-} 
+  .timer {
+    font-size: 70px;
+  }
+}
